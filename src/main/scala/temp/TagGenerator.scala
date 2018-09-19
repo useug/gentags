@@ -27,7 +27,7 @@ object TagGenerator {
     poi_taglist.map(e=>e._1+"\t"+e._2).saveAsTextFile("file:///D:/tmp/tagsgen/result")
   }
 
-  //先删除文件夹
+  //先删除文件夹 !
   def deleteDir(dir: File): Unit = {
     val files = dir.listFiles()
     files.foreach(f => {
